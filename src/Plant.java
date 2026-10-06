@@ -1,16 +1,10 @@
 public class Plant {
-    private String plantType;
     private String name;
     private double height;
 
-    public Plant(String plantType, String name, double height) {
-        this.plantType = plantType;
+    public Plant(String name, double height) {
         this.name = name;
         this.height = height;
-    }
-
-    public String getPlantType() {
-        return plantType;
     }
 
     public String getName() {
@@ -19,10 +13,6 @@ public class Plant {
 
     public double getHeight() {
         return height;
-    }
-
-    public void setPlantType(String plantType) {
-        this.plantType = plantType;
     }
 
     public void setname(String name) {
