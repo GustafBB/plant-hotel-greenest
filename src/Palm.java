@@ -7,4 +7,8 @@ public class Palm extends Plant{
         double liquidAmountPerDay = 0.5 * getHeight();
         return liquidAmountPerDay;
     }
+
+    public LiquidType getLiquidType() {
+        return LiquidType.TAP_WATER;
+    }
 }
