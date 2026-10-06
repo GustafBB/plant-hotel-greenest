@@ -1,9 +1,9 @@
-public class Plants {
+public class Plant {
     private String plantType;
     private String name;
     private double height;
 
-    public Plants(String plantType, String name, double height) {
+    public Plant(String plantType, String name, double height) {
         this.plantType = plantType;
         this.name = name;
         this.height = height;
