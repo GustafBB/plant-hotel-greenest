@@ -3,7 +3,7 @@ public class Palm extends Plant{
         super(name, height);
     }
 
-    public double calculateLiquidAmount(height) {
+    public double calculateLiquidAmount() {
         double liquidAmountPerDay = 0.5 * getHeight();
         return liquidAmountPerDay;
     }
