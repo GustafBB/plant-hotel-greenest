@@ -4,7 +4,11 @@ public class Cactus extends Plant {
     }
 
     public double calculateLiquidAmount() {
-        double liquidAmountPerDay = 2 / 100;
+        double liquidAmountPerDay = 2.0 / 100.0;
         return liquidAmountPerDay;
+    }
+
+    public LiquidType getLiquidType() {
+        return LiquidType.MINERAL_WATER;
     }
 }
