@@ -14,5 +14,8 @@ public class Main {
         plants.add(laura);
         plants.add(meatloaf);
         plants.add(olof);
+
+        Interface interface1 = new Interface(plants);
+        interface1.showInterface();
     }
 }

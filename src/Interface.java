@@ -9,12 +9,15 @@ public class Interface {
         this.plants = plants;
     }
 
-    String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
+    public void showInterface(List<Plant> plants) {
+        String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
 
-    for (Plant plant : plants) {
-        if (plantName.equals(plant.getName())) {
-            JOptionPane.showMessageDialog(null, plantName + " ska ha " + plant.calculateLiquidAmount + plant.getLiquidType + "liter per dag.");
+        for (Plant plant : plants) {
+            if (plantName.equals(plant.getName())) {
+                JOptionPane.showMessageDialog(null, plantName + " ska ha " + plant.calculateLiquidAmount + plant.getLiquidType + "liter per dag.");
+            }
         }
+
     }
 
 }
