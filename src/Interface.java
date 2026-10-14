@@ -14,21 +14,21 @@ public class Interface {
         String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
 
         for (Plant plant : plants) {
-            if (plantName.equals(plant.getName())) {
+            if (plantName.equalsIgnoreCase(plant.getName())) {
                 if (plant.getPlantType().equals("Palm")) {
-                    JOptionPane.showMessageDialog(null, plantName + " ska ha " +
+                    JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
                             ((Palm) plant).calculateLiquidAmount() + " liter " +
                             ((Palm) plant).getLiquidType().toString().replace(
                                     "_", " ").toLowerCase() + " per dag.");
                 }
                 else if (plant.getPlantType().equals("CarnivorousPlant")) {
-                    JOptionPane.showMessageDialog(null, plantName + " ska ha " +
+                    JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
                             ((CarnivorousPlant) plant).calculateLiquidAmount() + " liter " +
                             ((CarnivorousPlant) plant).getLiquidType().toString().replace(
                                     "_", " ").toLowerCase() + " per dag.");
                 }
                 else if (plant.getPlantType().equals("Cactus")) {
-                    JOptionPane.showMessageDialog(null, plantName + " ska ha " +
+                    JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
                             ((Cactus) plant).calculateLiquidAmount() + " liter " +
                             ((Cactus) plant).getLiquidType().toString().replace(
                                     "_", " ").toLowerCase() + " per dag.");
