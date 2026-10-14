@@ -34,6 +34,9 @@ public class Interface {
                                     "_", " ").toLowerCase() + " per dag.");
                 }
             }
+            else {
+                JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
+            }
         }
 
     }
