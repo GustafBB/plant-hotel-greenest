@@ -14,7 +14,15 @@ public class Interface {
 
         for (Plant plant : plants) {
             if (plantName.equals(plant.getName())) {
-                JOptionPane.showMessageDialog(null, plantName + " ska ha " + plant.calculateLiquidAmount + plant.getLiquidType + "liter per dag.");
+                if (plant.getPlantType().equals("Palm")) {
+                    JOptionPane.showMessageDialog(null, plantName + " ska ha " + ((Palm) plant).calculateLiquidAmount() + ((Palm) plant).getLiquidType() + "liter per dag.");
+                }
+                else if (plant.getPlantType().equals("CarnivorousPlant")) {
+                    JOptionPane.showMessageDialog(null, plantName + " ska ha " + ((CarnivorousPlant) plant).calculateLiquidAmount() + ((CarnivorousPlant) plant).getLiquidType() + "liter per dag.");
+                }
+                else if (plant.getPlantType().equals("Cactus")) {
+                    JOptionPane.showMessageDialog(null, plantName + " ska ha " + ((Cactus) plant).calculateLiquidAmount() + ((Cactus) plant).getLiquidType() + "liter per dag.");
+                }
             }
         }
 
