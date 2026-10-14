@@ -11,9 +11,9 @@ public class Interface {
     }
 
     public void showInterface(List<Plant> plants) {
-        String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
-
         for (Plant plant : plants) {
+            String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
+
             if (plantName.equalsIgnoreCase(plant.getName())) {
                 if (plant.getPlantType().equals("Palm")) {
                     JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
