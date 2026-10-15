@@ -1,4 +1,4 @@
-public class Plant {
+public abstract class Plant {
     private String name;
     private double height;
     private String plantType;
@@ -32,4 +32,8 @@ public class Plant {
     public void setPlantType(String plantType) {
         this.plantType = plantType;
     }
+
+    public abstract double calculateLiquidAmount();
+
+    public abstract LiquidType getLiquidType();
 }

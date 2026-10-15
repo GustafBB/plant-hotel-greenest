@@ -53,5 +53,17 @@ public class Interface {
         }
 
     }
+    /*
+    Can use instanceof instead of getPlantType:
+    if (plant instanceof Palm) {
+        ...
+    }
+    else if (plant instanceof CarnivorousPlant) {
+        ...
+    }
+    ...
+
+    But it's better to use abstract methods! (I think.) Maybe abstract class for Media as well.
+     */
 
 }
