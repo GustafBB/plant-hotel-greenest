@@ -1,6 +1,6 @@
 public class CarnivorousPlant extends Plant {
-    public CarnivorousPlant(String name, double height, String plantType) {
-        super(name, height, plantType);
+    public CarnivorousPlant(String name, double height) {
+        super(name, height);
     }
 
     public double calculateLiquidAmount() {

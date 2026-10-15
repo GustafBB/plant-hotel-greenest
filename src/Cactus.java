@@ -1,6 +1,6 @@
 public class Cactus extends Plant {
-    public Cactus(String name, double height, String plantType) {
-        super(name, height, plantType);
+    public Cactus(String name, double height) {
+        super(name, height);
     }
 
     public double calculateLiquidAmount() {

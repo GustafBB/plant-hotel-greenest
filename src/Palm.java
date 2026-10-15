@@ -1,6 +1,6 @@
 public class Palm extends Plant{
-    public Palm(String name, double height, String plantType) {
-        super(name, height, plantType);
+    public Palm(String name, double height) {
+        super(name, height);
     }
 
     public double calculateLiquidAmount() {
