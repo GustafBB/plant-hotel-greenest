@@ -8,7 +8,7 @@ public class Dialog {
         this.plants = plants;
     }
 
-    public void showInterface(List<Plant> plants) {
+    public void showInterface() {
         boolean nameExists = false;
         while (!nameExists) {
             String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
