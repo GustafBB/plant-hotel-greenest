@@ -1,12 +1,10 @@
 import javax.swing.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-public class Interface {
+public class Dialog {
     private List<Plant> plants;
 
-    public Interface(List<Plant> plants) {
+    public Dialog(List<Plant> plants) {
         this.plants = plants;
     }
 

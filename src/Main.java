@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class Main {
         plants.add(meatloaf);
         plants.add(olof);
 
-        Interface interface1 = new Interface(plants);
-        interface1.showInterface(plants);
+        Dialog dialog = new Dialog(plants);
+        dialog.showInterface(plants);
     }
 }
