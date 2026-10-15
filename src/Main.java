@@ -15,6 +15,6 @@ public class Main {
         plants.add(olof);
 
         Dialog dialog = new Dialog(plants);
-        dialog.showInterface();
+        dialog.showDialog();
     }
 }
