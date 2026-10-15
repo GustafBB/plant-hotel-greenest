@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class Interface {
-    List<Plant> plants = new ArrayList<>();
+    List<Plant> plants;
 
     public Interface(List<Plant> plants) {
         this.plants = plants;
