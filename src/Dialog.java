@@ -11,27 +11,32 @@ public class Dialog {
     public void showDialog() {
         boolean nameExists = false;
         while (!nameExists) {
-            String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
+            try {
+                String plantName = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
 
-            for (Plant plant : plants) {
-                if (plantName.equalsIgnoreCase(plant.getName())) {
-                    JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
-                            plant.calculateLiquidAmount() + " liter " +
-                            plant.getLiquidType().toString().replace(
-                                    "_", " ").toLowerCase() + " per dag.");
-                    nameExists = true;
-                    break;
+                for (Plant plant : plants) {
+                    if (plantName.equalsIgnoreCase(plant.getName())) {
+                        JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
+                                plant.calculateLiquidAmount() + " liter " +
+                                plant.getLiquidType().toString().replace(
+                                        "_", " ").toLowerCase() + " per dag.");
+                        nameExists = true;
+                        break;
+                    }
+                    //else {
+                    //JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
+                    //break;
+                    //}
                 }
-                //else {
-                //JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
-                //break;
-                //}
+                if (!nameExists) {
+                    JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
+                }
             }
-            if (!nameExists) {
-                JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
+            catch (NullPointerException e) {
+                JOptionPane.showMessageDialog(null, "Hej då!");
+                break;
             }
         }
-
     }
     /*
     Can use instanceof instead of getPlantType:
