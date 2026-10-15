@@ -23,10 +23,6 @@ public class Dialog {
                         nameExists = true;
                         break;
                     }
-                    //else {
-                    //JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
-                    //break;
-                    //}
                 }
                 if (!nameExists) {
                     JOptionPane.showMessageDialog(null, "Det namnet finns inte på växthotellet!");
