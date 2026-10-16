@@ -1,4 +1,4 @@
-public abstract class Plant {
+public abstract class Plant implements LiquidInformation {
     private String name;
     private double height;
 
@@ -23,7 +23,7 @@ public abstract class Plant {
         this.height = height;
     }
 
-    public abstract double calculateLiquidAmount();
+    /*public abstract double calculateLiquidAmount();
 
-    public abstract LiquidType getLiquidType();
+    public abstract LiquidType getLiquidType();*/
 }
