@@ -22,8 +22,4 @@ public abstract class Plant implements LiquidInformation {
     public void setheight(double height) {
         this.height = height;
     }
-
-    /*public abstract double calculateLiquidAmount();
-
-    public abstract LiquidType getLiquidType();*/
 }
