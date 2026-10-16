@@ -18,8 +18,7 @@ public class Dialog {
                     if (plantName.equalsIgnoreCase(plant.getName())) {
                         JOptionPane.showMessageDialog(null, plant.getName() + " ska ha " +
                                 plant.calculateLiquidAmount() + " liter " +
-                                plant.getLiquidType().toString().replace(
-                                        "_", " ").toLowerCase() + " per dag.");
+                                plant.getLiquidType().getLiquidName() + " per dag.");
                         nameExists = true;
                         break;
                     }
